@@ -1,6 +1,6 @@
 import socket
 import threading
-import pickle
+
 
 class ClaseCliente():
 	def __init__(self):
