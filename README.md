@@ -26,6 +26,7 @@ Agregar funciones en el cliente:
 
 General:
   - Agregar una interfaz grafica
+  - Agregar funciones en red reales
 
 
 
