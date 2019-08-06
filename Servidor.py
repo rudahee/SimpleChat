@@ -7,7 +7,7 @@ class ClaseServidor():
 
 		# Configuramos el tipo de conexion y nos ponemos a escuchar 
 		self.servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.servidor.bind(('localhost', 1337))
+		self.servidor.bind(('0.0.0.0', 1337))
 		self.servidor.listen()
 		self.servidor.setblocking(False) # No bloqueamos la conexion (Genera una excepcion si no puede mandar o recibir datos).
 

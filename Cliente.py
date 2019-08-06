@@ -7,7 +7,7 @@ class ClaseCliente():
 
 		# Configuramos el tipo de conexion y nos conectamos al servidor.
 		self.cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.cliente.connect(('localhost', 1337))
+		self.cliente.connect(('192.168.1.104', 1337))
 
 		self.nick = input("Selecciona tu nombre de usuario: ")
 
