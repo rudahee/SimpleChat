@@ -14,7 +14,7 @@ class AppCliente:
 		# 	Configuramos el tipo de conexion y nos conectamos al servidor.
 
 		self.cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.cliente.connect(('51.83.68.152', 1337))
+		self.cliente.connect(('localhost', 1337))
 
 
 		# Vamos a llamar la ventana emergente para obtener el nick.

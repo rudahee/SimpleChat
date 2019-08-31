@@ -36,14 +36,7 @@ class ClaseServidor():
 	def MandarMensajes(self, mensaje, emisor):
 		
 		for receptor in self.listaConexiones:	
-			try: 
-				# Si la persona que envia el mensaje no es el que lo recibe, envia el mensaje.
-				if emisor != receptor:
-					receptor.send(mensaje)
-			except:
-				# Entramos en la excepcion si no se puede enviar el mensaje a alguien, y lo quitamos de la lista de clientes.
-				self.listaConexiones.remove(cliente)
-
+			receptor.send(mensaje)
 
 	def AceptarConexiones(self):
 
